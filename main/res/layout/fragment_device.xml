@@ -1,0 +1,31 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="64dp"
+    android:paddingRight="64dp"
+    android:paddingBottom="16dp"
+    android:paddingTop="16dp"
+    tools:context=".DeviceFragment"
+    >
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lvDeviceList"
+        android:layout_weight="1">
+
+    </ListView>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:id="@+id/btnScanDevices"
+        android:text="@string/scanDevices"/>
+
+
+
+</LinearLayout>

@@ -1,0 +1,83 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+
+    tools:context=".ChatBoxFragment">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/notifyBox"
+                />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/deviceListSpinner"
+                android:layout_weight="1">
+
+            </Spinner>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/connectButton"
+                android:text="@string/connect"
+                android:layout_weight="0"/>
+
+        </LinearLayout>
+
+
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/message_ListView"
+        android:layout_weight="1"
+        android:padding="6dp"
+        android:fadeScrollbars="true"
+        android:background="@color/background_floating_material_light"
+        >
+
+    </ListView>
+
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="0">
+        <EditText
+            android:id="@+id/send_message_txtView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:enabled="false"
+            android:layout_weight="1"
+            />
+        <Button
+            android:id="@+id/message_send_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send"
+            android:layout_weight="0"
+            android:enabled="false"/>
+        <Button
+            android:id="@+id/attach_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Attach"
+            android:layout_weight="0"
+            android:enabled="false"/>
+    </LinearLayout>
+
+</LinearLayout>
